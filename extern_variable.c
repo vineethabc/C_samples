@@ -11,7 +11,7 @@ int i=35;
 int main(){
 float k;
 k=fun();
-i=55;
+//i=55;
 printf("num=%d",i);
 //printf("k=%f",k);
 

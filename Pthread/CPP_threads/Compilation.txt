@@ -1,0 +1,3 @@
+cpp thread program compiling:
+
+  g++ t1.cpp -o t1 -std=c++11 -pthread

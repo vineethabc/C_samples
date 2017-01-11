@@ -9,7 +9,7 @@ main(){
 
 const int i=30;
 //change(&i);
-const int *p=&i;
+int *p=&i;
 *p=55;
 printf("i=%d\n",i);
 

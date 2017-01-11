@@ -18,6 +18,7 @@ main(){
 
 struct pad sp;
 printf("\nsizeof(float)=%d\n",sizeof(float));
+printf("\nsizeof(int)=%d\n",sizeof(int));
 printf("size of structure=%d\n ",sizeof(sp));
 
 }

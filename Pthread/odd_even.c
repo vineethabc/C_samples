@@ -22,19 +22,20 @@ pthread_join(tid[1],NULL);
 
 void* PrintEvenNos(void *ptr)
 {
-pthread_mutex_lock(&mutex);
-do
-{
-if(shared_data%2 == 0)
-{
-printf("\t\tEven:%d\n",shared_data);
-shared_data++;
-}
-else
-{
-rc=pthread_mutex_unlock(&mutex);//if number is odd, do not print, release mutex
-}
-}while(shared_data <= 100);
+ pthread_mutex_lock(&mutex);
+ do
+ {
+  if(shared_data%2 == 0)
+  {
+    printf("\t\tEven:%d\n",shared_data);
+    shared_data++;
+  }
+  else
+  {
+    rc=pthread_mutex_unlock(&mutex);//if number is odd, do not print, release mutex
+  }
+ }while(shared_data <= 100);
+
 }
 
 void* PrintOddNos(void* ptr1)

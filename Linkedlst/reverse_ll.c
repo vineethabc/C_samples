@@ -11,6 +11,8 @@ struct node
 /* Function to reverse the linked list */
 static void reverse(struct node** head_ref)
 {
+    if(*headref==NULL)
+	return;
     struct node* prev   = NULL;
     struct node* current = *head_ref;
     struct node* next;
